@@ -25,21 +25,48 @@
         <ul>
           <li>Red Facebook Tee</li> 
             <ul>
-                <li><button class="button button1">View</button></li>
-                <li><button class="button button2">Add To Cart</button></li>
-                <li><button class="button button3">Buy</button></li>
+                <li><button id="ViewContentButton" class="button button1">View</button></li>
+                    <script type="text/javascript"> $('#ViewContentButton').click(function() {
+                        fbq('track', 'viewContent', contents: [{ id: 'shirt-6', quantity: 1 }],content_type: 'product',);});
+                    </script>
+                <li><button id="AddToCartButton" class="button button2">Add To Cart</button></li>
+                    <script type="text/javascript"> $('#AddToCartButton').click(function() {
+                        fbq('track', 'AddToCart', contents: [{ id: 'shirt-6', quantity: 1 }],content_type: 'product',);});
+                    </script>
+                <li><button id="PurchaseButton" class="button button3">Buy</button></li>
+                    <script type="text/javascript"> $('#PurchaseButton').click(function() {
+                        fbq('track', 'Purchase', contents: [{ id: 'shirt-6', quantity: 1 }],content_type: 'product',);});
+                    </script>
             </ul>                        
           <li>Blue Facebook Tee</li>
             <ul>
-                <li><button class="button button1">View</button></li>
-                <li><button class="button button2">Add To Cart</button></li>
-                <li><button class="button button3">Buy</button></li>
-            </ul> 
+                <li><button id="ViewContentButton" class="button button1">View</button></li>
+                    <script type="text/javascript"> $('#ViewContentButton').click(function() {
+                        fbq('track', 'viewContent', contents: [{ id: 'shirt-2', quantity: 1 }],content_type: 'product',);});
+                    </script>
+                <li><button id="AddToCartButton" class="button button2">Add To Cart</button></li>
+                    <script type="text/javascript"> $('#AddToCartButton').click(function() {
+                        fbq('track', 'AddToCart', contents: [{ id: 'shirt-2', quantity: 1 }],content_type: 'product',);});
+                    </script>
+                <li><button id="PurchaseButton" class="button button3">Buy</button></li>
+                    <script type="text/javascript"> $('#PurchaseButton').click(function() {
+                        fbq('track', 'Purchase', contents: [{ id: 'shirt-2', quantity: 1 }],content_type: 'product',);});
+                    </script>
+            </ul>  
           <li>White Facebook Tee</li>
             <ul>
-                <li><button class="button button1">View</button></li>
-                <li><button class="button button2">Add To Cart</button></li>
-                <li><button class="button button3">Buy</button></li>
+                <li><button id="ViewContentButton" class="button button1">View</button></li>
+                    <script type="text/javascript"> $('#ViewContentButton').click(function() {
+                        fbq('track', 'viewContent', contents: [{ id: 'eaazki3c8a', quantity: 1 }],content_type: 'product',);});
+                    </script>
+                <li><button id="AddToCartButton" class="button button2">Add To Cart</button></li>
+                    <script type="text/javascript"> $('#AddToCartButton').click(function() {
+                        fbq('track', 'AddToCart', contents: [{ id: 'eaazki3c8a', quantity: 1 }],content_type: 'product',);});
+                    </script>
+                <li><button id="PurchaseButton" class="button button3">Buy</button></li>
+                    <script type="text/javascript"> $('#PurchaseButton').click(function() {
+                        fbq('track', 'Purchase', contents: [{ id: 'eaazki3c8a', quantity: 1 }],content_type: 'product',);});
+                    </script>
             </ul> 
         </ul>
     </body>
