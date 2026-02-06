@@ -26,8 +26,21 @@
           <li>Red Facebook Tee</li> 
             <ul>
                 <li><button id="ViewContentButton1" class="button button1">View</button></li>
-                    <script type="text/javascript"> $('#ViewContentButton1').click(function() {
-                        fbq('track', 'ViewContent',{currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
+                    <script type="text/javascript"> 
+                        var button = document.getElementById('ViewContentButton1');
+                        button.addEventListener('click', 
+                            function() { 
+                              fbq('track', 'AddToCart', {
+                                    content_name: 'Red Tee', 
+                                    content_category: 'Apparel,
+                                    content_ids: ['shirt-6'],
+                                    content_type: 'product',
+                                    value: 4.99,
+                                    currency: 'USD' 
+                                });          
+                            },
+                            false
+                          );
                     </script>
                 <li><button id="AddToCartButton1" class="button button2">Add To Cart</button></li>
                     <script type="text/javascript"> $('#AddToCartButton1').click(function() {
