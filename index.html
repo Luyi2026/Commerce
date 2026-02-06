@@ -27,15 +27,15 @@
             <ul>
                 <li><button id="ViewContentButton1" class="button button1">View</button></li>
                     <script type="text/javascript"> $('#ViewContentButton1').click(function() {
-                        fbq('track', 'ViewContent',{currency: "USD", value: 30.00,contents: [{ id: 'shirt-6', quantity: 1 }],content_type: 'product'});});
+                        fbq('track', 'ViewContent',{currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
                     </script>
                 <li><button id="AddToCartButton1" class="button button2">Add To Cart</button></li>
                     <script type="text/javascript"> $('#AddToCartButton1').click(function() {
-                        fbq('track', 'AddToCart', {currency: "USD", value: 30.00,contents: [{ id: 'shirt-6', quantity: 1 }],content_type: 'product'});});
+                        fbq('track', 'AddToCart', {currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
                     </script>
                 <li><button id="PurchaseButton1" class="button button3">Buy</button></li>
                     <script type="text/javascript"> $('#PurchaseButton1').click(function() {
-                        fbq('track', 'Purchase', {currency: "USD", value: 30.00,contents: [{ id: 'shirt-6', quantity: 1 }],content_type: 'product'});});
+                        fbq('track', 'Purchase', {currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
                     </script>
             </ul>                        
           <li>Blue Facebook Tee</li>
