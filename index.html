@@ -69,6 +69,7 @@
                     </script>
                 <li><button id="PurchaseButton3" class="button button3">Buy</button></li>
                     <script type="text/javascript"> $('#PurchaseButton3').click(function() {
+                        fbq('trackCustom', 'Custom_Event_Purchase', {currency: "USD", value: 30.00,contents: [{ id: 'eaazki3c8a', quantity: 1 }],content_type: 'product'});});
                         fbq('track', 'Purchase', { currency: "USD", value: 30.00,contents: [{ id: 'eaazki3c8a', quantity: 1 }],content_type: 'product'});});
                     </script>
             </ul> 
