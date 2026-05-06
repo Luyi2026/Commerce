@@ -32,13 +32,16 @@
                         <script> $('#ViewContentButton1').click(function() {
                         fbq('track', 'ViewContent', {currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
                     </script>
-                    </script>
                 <li><button id="AddToCartButton1" class="button button2">Add To Cart</button></li>
                     <script> $('#AddToCartButton1').click(function() {
                         fbq('track', 'AddToCart', {currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
                     </script>
                 <li><button id="PurchaseButton1" class="button button3">Buy</button></li>
                     <script> $('#PurchaseButton1').click(function() {
+                        fbq('track', 'Purchase', {currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
+                    </script>
+                <li><button id="GermanButton" class="button button4">Dieser Buttonname ist auf Deutsch</button></li>
+                    <script> $('#GermanButton').click(function() {
                         fbq('track', 'Purchase', {currency: "USD", value: 30.00,content_ids: ['shirt-6'],content_type: 'product'});});
                     </script>
             </ul>                        
